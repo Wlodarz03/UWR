@@ -1,0 +1,3 @@
+javac -d bin src/wyjatki/*.java src/*.java
+java -ea -cp bin Game
+javadoc -d ./docs -sourcepath ./src ./src/GameState.java ./src/wyjatki/*.java ./src/Game.java

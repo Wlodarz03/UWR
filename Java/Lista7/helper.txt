@@ -1,0 +1,2 @@
+cd src -> javac -d ../bin structures/*.java
+cd bin -> java Main
