@@ -1,0 +1,6 @@
+javac -d bin src/obliczenia/*.java src/struktury/*.java - kompilacja całego src (z katalogu \Lista4)
+
+cd bin -> java obliczenia.Main  - odpalenie Maina
+
+jar cvf obliczenia.jar -C bin/obliczenia/ . -> utworzenie jar na obliczenia
+jar cvf struktury.jar -C bin/struktury/ . -> utworzenie jar na struktury
