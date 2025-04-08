@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"wyjatki","l":"DuplicateNumberException"},{"p":"<Unnamed>","l":"Game"},{"p":"<Unnamed>","l":"GameState"},{"p":"wyjatki","l":"NumberOutOfRangeException"},{"p":"wyjatki","l":"TooManyOrTooFewNumbersException"}];updateSearchResults();
