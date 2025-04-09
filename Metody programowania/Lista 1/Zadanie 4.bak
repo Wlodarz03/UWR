@@ -1,0 +1,14 @@
+#lang racket
+
+(require rackunit)
+
+(define (suma a b c)
+  (+ (if (> a b) (if (> a c) (* a a) (* c c))
+      (if (> b c) (* b b)
+          (* c c)))
+  (if (> a b) (if (> a c) (if (> b c) (* b b) (* c c))
+                  (* a a))
+      (if (> a c) (* a a) (* c c)))))
+
+(check-equal? (suma 3 2 1) 13)
+(check-true (number? (suma 3 2 1)))

@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista3\\Zad7\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E070C233-9A7B-489E-94FE-831AC54D47CA}|Zad7\\Zad7.csproj|C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista3\\Zad7\\zad7\\webform1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E070C233-9A7B-489E-94FE-831AC54D47CA}|Zad7\\Zad7.csproj|solutionrelative:zad7\\webform1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E070C233-9A7B-489E-94FE-831AC54D47CA}|Zad7\\Zad7.csproj|C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista3\\Zad7\\zad7\\connectionstrings.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{E070C233-9A7B-489E-94FE-831AC54D47CA}|Zad7\\Zad7.csproj|solutionrelative:zad7\\connectionstrings.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E070C233-9A7B-489E-94FE-831AC54D47CA}|Zad7\\Zad7.csproj|C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista3\\Zad7\\zad7\\appsettings.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{E070C233-9A7B-489E-94FE-831AC54D47CA}|Zad7\\Zad7.csproj|solutionrelative:zad7\\appsettings.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E070C233-9A7B-489E-94FE-831AC54D47CA}|Zad7\\Zad7.csproj|c:\\users\\hp\\desktop\\studia\\5 semestr\\asp\\lista3\\zad7\\zad7\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{E070C233-9A7B-489E-94FE-831AC54D47CA}|Zad7\\Zad7.csproj|solutionrelative:zad7\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E070C233-9A7B-489E-94FE-831AC54D47CA}|Zad7\\Zad7.csproj|C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista3\\Zad7\\zad7\\webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{E070C233-9A7B-489E-94FE-831AC54D47CA}|Zad7\\Zad7.csproj|solutionrelative:zad7\\webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista3\\Zad7\\Zad7\\Web.config",
+              "RelativeDocumentMoniker": "Zad7\\Web.config",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista3\\Zad7\\Zad7\\Web.config",
+              "RelativeToolTip": "Zad7\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-25T21:08:21.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConnectionStrings.config",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista3\\Zad7\\Zad7\\ConnectionStrings.config",
+              "RelativeDocumentMoniker": "Zad7\\ConnectionStrings.config",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista3\\Zad7\\Zad7\\ConnectionStrings.config",
+              "RelativeToolTip": "Zad7\\ConnectionStrings.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-13T14:36:54.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppSettings.config",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista3\\Zad7\\Zad7\\AppSettings.config",
+              "RelativeDocumentMoniker": "Zad7\\AppSettings.config",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista3\\Zad7\\Zad7\\AppSettings.config",
+              "RelativeToolTip": "Zad7\\AppSettings.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-13T14:36:20.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WebForm1.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista3\\Zad7\\Zad7\\WebForm1.aspx.cs",
+              "RelativeDocumentMoniker": "Zad7\\WebForm1.aspx.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista3\\Zad7\\Zad7\\WebForm1.aspx.cs",
+              "RelativeToolTip": "Zad7\\WebForm1.aspx.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAA8wDkAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T21:38:36.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WebForm1.aspx",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista3\\Zad7\\Zad7\\WebForm1.aspx",
+              "RelativeDocumentMoniker": "Zad7\\WebForm1.aspx",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista3\\Zad7\\Zad7\\WebForm1.aspx",
+              "RelativeToolTip": "Zad7\\WebForm1.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-11T21:25:54.347Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

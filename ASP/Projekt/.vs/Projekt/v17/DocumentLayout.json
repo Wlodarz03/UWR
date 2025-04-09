@@ -1,0 +1,327 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|c:\\users\\hp\\desktop\\studia\\5 semestr\\asp\\projekt\\projekt\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|solutionrelative:projekt\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|c:\\users\\hp\\desktop\\studia\\5 semestr\\asp\\projekt\\projekt\\views\\cart\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|solutionrelative:projekt\\views\\cart\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|c:\\users\\hp\\desktop\\studia\\5 semestr\\asp\\projekt\\projekt\\views\\cart\\end.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|solutionrelative:projekt\\views\\cart\\end.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|c:\\users\\hp\\desktop\\studia\\5 semestr\\asp\\projekt\\projekt\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|solutionrelative:projekt\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|c:\\users\\hp\\desktop\\studia\\5 semestr\\asp\\projekt\\projekt\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|solutionrelative:projekt\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|c:\\users\\hp\\desktop\\studia\\5 semestr\\asp\\projekt\\projekt\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|solutionrelative:projekt\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|c:\\users\\hp\\desktop\\studia\\5 semestr\\asp\\projekt\\projekt\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|solutionrelative:projekt\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|c:\\users\\hp\\desktop\\studia\\5 semestr\\asp\\projekt\\projekt\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|solutionrelative:projekt\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|c:\\users\\hp\\desktop\\studia\\5 semestr\\asp\\projekt\\projekt\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|solutionrelative:projekt\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|c:\\users\\hp\\desktop\\studia\\5 semestr\\asp\\projekt\\projekt\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|solutionrelative:projekt\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|c:\\users\\hp\\desktop\\studia\\5 semestr\\asp\\projekt\\projekt\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|solutionrelative:projekt\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|c:\\users\\hp\\desktop\\studia\\5 semestr\\asp\\projekt\\projekt\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|solutionrelative:projekt\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|c:\\users\\hp\\desktop\\studia\\5 semestr\\asp\\projekt\\projekt\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|solutionrelative:projekt\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|c:\\users\\hp\\desktop\\studia\\5 semestr\\asp\\projekt\\projekt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|solutionrelative:projekt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|c:\\users\\hp\\desktop\\studia\\5 semestr\\asp\\projekt\\projekt\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|solutionrelative:projekt\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|c:\\users\\hp\\desktop\\studia\\5 semestr\\asp\\projekt\\projekt\\views\\account\\users.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|solutionrelative:projekt\\views\\account\\users.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|c:\\users\\hp\\desktop\\studia\\5 semestr\\asp\\projekt\\projekt\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|solutionrelative:projekt\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|c:\\users\\hp\\desktop\\studia\\5 semestr\\asp\\projekt\\projekt\\sessionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F74D5518-70FF-45C8-966B-93E12B18B36F}|Projekt\\Projekt.csproj|solutionrelative:projekt\\sessionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Projekt\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Projekt\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAgwCMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T15:18:37.646Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "End.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Views\\Cart\\End.cshtml",
+              "RelativeDocumentMoniker": "Projekt\\Views\\Cart\\End.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Views\\Cart\\End.cshtml",
+              "RelativeToolTip": "Projekt\\Views\\Cart\\End.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-27T20:31:12.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Cart.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Views\\Cart\\Cart.cshtml",
+              "RelativeDocumentMoniker": "Projekt\\Views\\Cart\\Cart.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Views\\Cart\\Cart.cshtml",
+              "RelativeToolTip": "Projekt\\Views\\Cart\\Cart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-27T19:42:32.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Views\\Product\\Details.cshtml",
+              "RelativeDocumentMoniker": "Projekt\\Views\\Product\\Details.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Views\\Product\\Details.cshtml",
+              "RelativeToolTip": "Projekt\\Views\\Product\\Details.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAcAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-27T19:25:28.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Projekt\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Projekt\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAqwA4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T18:16:59.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Projekt\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Projekt\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAkwEUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T16:28:06.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "Projekt\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "Projekt\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACAAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-27T15:56:52.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Projekt\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Projekt\\Controllers\\CartController.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAuwFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T16:30:57.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "Projekt\\Models\\Cart.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Models\\Cart.cs",
+              "RelativeToolTip": "Projekt\\Models\\Cart.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T16:45:33.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Projekt\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Models\\Product.cs",
+              "RelativeToolTip": "Projekt\\Models\\Product.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAQwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T16:58:13.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Startup.cs",
+              "RelativeDocumentMoniker": "Projekt\\Startup.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Startup.cs",
+              "RelativeToolTip": "Projekt\\Startup.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAkwD4AAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T15:17:29.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\appsettings.json",
+              "RelativeDocumentMoniker": "Projekt\\appsettings.json",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\appsettings.json",
+              "RelativeToolTip": "Projekt\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-27T18:49:43.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Program.cs",
+              "RelativeDocumentMoniker": "Projekt\\Program.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Program.cs",
+              "RelativeToolTip": "Projekt\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T15:17:25.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Projekt\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Projekt\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-27T16:26:04.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Projekt\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Models\\User.cs",
+              "RelativeToolTip": "Projekt\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T17:26:27.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Users.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Views\\Account\\Users.cshtml",
+              "RelativeDocumentMoniker": "Projekt\\Views\\Account\\Users.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Views\\Account\\Users.cshtml",
+              "RelativeToolTip": "Projekt\\Views\\Account\\Users.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAgwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-27T17:03:28.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Projekt\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Projekt\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-27T16:27:02.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SessionExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\SessionExtensions.cs",
+              "RelativeDocumentMoniker": "Projekt\\SessionExtensions.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Projekt\\Projekt\\SessionExtensions.cs",
+              "RelativeToolTip": "Projekt\\SessionExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T16:53:50.659Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

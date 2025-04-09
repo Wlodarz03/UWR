@@ -1,0 +1,26 @@
+#lang racket
+
+10 ;po prostu 10
+(+ 5 3 4) ;suma 5 3 i 4
+(- 9 1) ;roznica 9-1
+(/ 6 2) ;iloraz 6/2
+(+ (* 2 4) (- 4 6)) ;suma iloczynu 2*4 i roznicy 4-6
+(define a 3) ;zmienna a=3
+(define b (+ a 1)) ;zmienna b=a+1=4
+(+ a b (* a b)) ;suma a+b oraz iloczynu a*b
+(= a b) ; #false bo a!=b
+(if (and (> b a) (< b (* a b)))
+    b
+    a)
+;jezeli b>a oraz b<a*b to b wpp a
+(cond [(= a 4) 6]
+      [(= b 4) (+ 6 7 a)]
+      [else 25])
+;jezeli a=4 to 6 wpp jezeli b=4 to suma 6+7+a wpp 25
+(+ 2 (if (> b a) b a)) ;suma 2+ max(b,a)
+(* (cond[(> a b) a]
+        [(< a b) b]
+        [else -1])
+   (+ a 1))
+;jezeli a>b to iloczyn a*(a+1) jezeli a<b to iloczyn b*(a+b)
+;jezeli a=b to -1*(a+1)

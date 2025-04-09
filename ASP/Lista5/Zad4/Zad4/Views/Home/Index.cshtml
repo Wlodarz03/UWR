@@ -1,0 +1,68 @@
+﻿@model Zad4.Models.SampleViewModel
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Przykład HTML Helpers</h1>
+
+    <h2>Html.ActionLink</h2>
+    <label>Przykład linku wygenerowanego przy użyciu Html.ActionLink:</label>
+    @Html.ActionLink("Przejdź do strony głównej", "Index", "Home")
+
+    <h2>Checkboxy:</h2>
+    <label>CheckBox:</label>
+    @Html.CheckBox("Akceptuje regulamin", Model.AcceptTerms)
+    <br />
+    <label>CheckBox związany z modelem:</label>
+    @Html.CheckBoxFor(m => m.AcceptTerms)
+
+    <h2>DropDownList:</h2>
+    <label>DropDownList:</label>
+    @Html.DropDownList("Options", new SelectList(Model.Options))
+    <br />
+    <label>DropDownList związana z modelem:</label>
+    @Html.DropDownListFor(m => m.SelectedOption, new SelectList(Model.Options))
+
+    <h2>TextBoxy:</h2>
+    <label>Pole tekstowe:</label>
+    @Html.TextBox("Name", Model.Name)
+    <br />
+    <label>Pole tekstowe związane z modelem:</label>
+    @Html.TextBoxFor(m => m.Name)
+
+    <h2>Password:</h2>
+    <label>Pole hasła:</label>
+    @Html.Password("Password")
+    <br />
+    <label>Pole hasła związane z modelem:</label>
+    @Html.PasswordFor(m => m.Password)
+
+    <h2>RadioButtony:</h2>
+    <label>Standardowe przyciski radiowe:</label>
+    @Html.RadioButton("Option", "Java") Java
+    @Html.RadioButton("Option", "ASP.NET") ASP.NET
+    <br />
+    <label>Przyciski radiowe związane z modelem:</label>
+    @Html.RadioButtonFor(m => m.SelectedOption, "Java") Java
+    @Html.RadioButtonFor(m => m.SelectedOption, "ASP.NET") ASP.NET
+
+    <h2>TextArea: </h2>
+    <label>Pole tekstowe wielowierszowe:</label>
+    @Html.TextArea("Description", Model.Description, 15, 10, new { @class = "textarea-class" })
+    <br />
+    <label>Pole tekstowe wielowierszowe związane z modelem:</label>
+    @Html.TextAreaFor(m => m.Description, 15, 10, new { @class = "textarea-class" })
+
+    <h2>Html.Raw</h2>
+    <label>Przykład wstawienia surowego HTML  (czyli html bez enkododwania):</label>
+    @Html.Raw("<strong>Ten tekst zostal wstawiony za pomocą Html.Raw</strong>")
+
+    }
+
+    @if (ViewBag.Message != null)
+    {
+        <h3 style="color: green;">@ViewBag.Message</h3>
+    }
+
+</body>
+</html>

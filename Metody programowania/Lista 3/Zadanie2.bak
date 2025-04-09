@@ -1,0 +1,6 @@
+#lang racket
+
+(define (product list)
+  (if (null? list)
+      0
+      (foldl * 1 list)))

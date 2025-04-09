@@ -1,0 +1,207 @@
+/* Resetowanie box-sizing i usunięcie domyślnych marginesów oraz paddingów */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Stylowanie nagłówków */
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* Usunięcie marginesu dla blog__header */
+.blog__header {
+    margin: 0;
+}
+
+/* Stylowanie content__main */
+.content__main {
+    background-color: #ececf7;
+    padding: 1rem 2rem;
+}
+
+/* Stylowanie nagłówka */
+.main_header {
+    background-color: white;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1);
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+/* Stylowanie listy nawigacyjnej */
+.navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100%;
+}
+
+/* Stylowanie linków */
+.navigation__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+/* Stylizacja hover dla linków */
+.navigation__link:hover {
+    background-color: #f1f1f1;
+}
+
+/* Opływanie obrazków w artykułach */
+.article:nth-of-type(1) .article__figure,
+.article:nth-of-type(3) .article__figure {
+    float: right;
+    margin-left: 1rem;
+}
+
+.article:nth-of-type(2) .article__figure {
+    float: left;
+    margin-right: 1rem;
+}
+
+/* Zapobieganie nakładaniu się elementów */
+.article {
+    clear: both;
+}
+
+/* Stylizacja podpisów pod obrazkami */
+.figure__caption {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/* Stylizacja sekcji warning */
+.warning {
+    background-color: #f4c5b7;
+    border: 3px solid #faf9f8;
+    border-radius: 20px;
+    padding: 1rem;
+    overflow: hidden; /* Zapobiega wyjeżdżaniu obrazka poza tło */
+}
+
+/* Wyśrodkowanie nagłówka w warning */
+.warning__header {
+    text-align: center;
+}
+
+/* Opływanie obrazka w warning */
+.warning__figure {
+    float: left;
+    margin-right: 1rem;
+}
+
+.gallery__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolumny o równej szerokości */
+    grid-template-rows: repeat(2, 1fr); /* 2 wiersze o równej wysokości */
+    gap: 1rem; /* Odstępy między elementami */
+}
+
+.gallery__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Zapobiega rozciąganiu */
+}
+
+/* Pierwszy obrazek: 1. kolumna, rozciąga się na 2 wiersze */
+.gallery__image:nth-child(1) {
+    grid-column: 1;
+    grid-row: span 2;
+}
+
+/* Drugi obrazek: 3. kolumna, 1. wiersz */
+.gallery__image:nth-child(2) {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+/* Trzeci obrazek: 2. wiersz, zaczyna się w 2. kolumnie, rozciąga się na 2 kolumny */
+.gallery__image:nth-child(3) {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+}
+
+.posts__wrapper {
+    position: relative;
+    height: 300px;
+}
+
+.post__container {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+}
+
+/* Pierwszy post – na górze */
+.post__container:first-child {
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Drugi post – przesunięcie w prawo i w dół */
+.post__container:last-child {
+    bottom: 0;
+    left: 250px;
+}
+
+/* Zmiana warstw po najechaniu na drugi post */
+.post__container:last-child:hover {
+    z-index: 1;
+}
+
+/* Obrazki */
+.post__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Podpis (tytuł posta) */
+.post__subtitle {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: royalblue;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+/* Ikona „i” */
+.post__info {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: salmon;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    font-weight: bold;
+    z-index: 1;
+}

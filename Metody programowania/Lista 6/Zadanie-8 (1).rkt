@@ -1,0 +1,51 @@
+#lang plait
+
+(define (sorted? xs)
+  (if (empty? xs)
+      #t
+      (if (empty? (rest xs))
+             #t
+            (and (<= (first xs) (first (rest xs)))
+                 (sorted? (rest xs))))))
+
+(define (insert x xs)
+  (cond [(empty? xs)
+         (list x)]
+        [(<= x (first xs))
+         (cons x xs)]
+        [else (cons (first xs) (insert x (rest xs)))]))
+
+; Niech P bedzie wlasnoscia list, taka ,ze:
+; (i) P(empty)
+; (ii) dla dowolnego elementu x oraz listy xs jesli P(xs) to P((cons x xs))
+; wowczas dla dowolnej listy zachodzi P(xs)
+
+;P(xs):= (sorted? xs) ≡ #t => (sorted? (insert x xs)) ≡ #t
+
+;Podstawa indukcji
+;P(empty)
+;Zał że (sorted? empty) ≡ #t
+;Pokazmy ze (sorted? (insert x empty)) ≡ #t
+;(sorted? (insert x empty))≡(z def insert)≡
+;(sorted? (list x))≡(z def sorted?)≡
+;#t (bo dla listy z jednym el)
+;Zatem zachodzi P(empty)
+
+;Krok indukcyjny
+;Zalozmy ze zachodzi (sorted? xs)≡#t =>(sorted? (insert x xs)) ≡ #t
+;Pokazmy ze zachodzi (sorted? (cons y xs))≡#t =>(sorted? (insert x (cons y xs))) ≡ #t
+
+;Zalozmy poprzednika (sorted? (cons y xs))≡#t
+;(sorted? (insert x (cons y xs)))≡(z def insert)
+
+;1 przyp gdy x<=y
+;≡(sorted? (cons x (cons y xs)))≡(z def sorted?)≡
+;≡(sorted? (cons y xs))≡(z z.i)≡#t
+
+;2 przyp gdy x>y
+;(sorted? (cons y (insert x xs)))≡ (z def sorted i x>y)≡
+;(sorted? (insert x xs))≡ (z z.i)≡ #t
+
+;Zatem dla dowolnej listy xs zachodzi P(xs)
+
+

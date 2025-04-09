@@ -1,0 +1,3 @@
+Projekt zrobiony, punkt końcowy dodany, ale to nie działa :(
+
+launchSettings.json w Properties

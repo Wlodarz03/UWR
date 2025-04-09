@@ -1,0 +1,10 @@
+Dokumentacja nieformalna
+
+Przypadek użycia: Zakupy w sklepie internetowym
+
+Zakup produktu – Klient przegląda ofertę sklepu internetowego i dodaje wybrane produkty do koszyka.
+Następnie przechodzi do procesu realizacji zamówienia, gdzie podaje dane do wysyłki 
+oraz wybiera metodę płatności (np. karta, przelew, BLIK).
+System e-commerce przetwarza zamówienie, weryfikuje płatność za pośrednictwem 
+zewnętrznego systemu płatności, a po jej zatwierdzeniu aktualizuje stan magazynowy.
+Klient otrzymuje potwierdzenie zamówienia e-mailem wraz z danymi do śledzenia przesyłki.

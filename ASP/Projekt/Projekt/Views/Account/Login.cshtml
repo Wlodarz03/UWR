@@ -1,0 +1,21 @@
+﻿<h2>Logowanie</h2>
+<form method="post" action="@Url.Action("Login", "Account")">
+    <div>
+        <label>Login:</label>
+        <input type="text" name="Username" required />
+    </div>
+    <div>
+        <label>Hasło:</label>
+        <input type="password" name="Password" required />
+    </div>
+    <button type="submit">Zaloguj</button>
+    @if (ViewData.ModelState.Count > 0)
+    {
+        <div style="color: red;">
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <p>@error.ErrorMessage</p>
+            }
+        </div>
+    }
+</form>

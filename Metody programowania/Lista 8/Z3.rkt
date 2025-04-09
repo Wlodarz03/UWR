@@ -1,0 +1,75 @@
+#lang racket
+
+(provide
+ queue?
+ node?
+ nonempty-queue/c
+ (contract-out
+  [queue-empty?     (-> queue? boolean?)]
+  [make-queue       (-> queue?)]
+  [queue-push-front (-> queue? any/c void?)]
+  [queue-push-back  (-> queue? any/c void?)]
+  [queue-pop-front  (-> nonempty-queue/c any/c)]
+  [queue-pop-back   (-> nonempty-queue/c any/c)]))
+
+(struct queue
+  ([front #:mutable]
+   [back #:mutable]) #:transparent)
+
+(struct node
+  ([prev #:mutable]
+   [el #:mutable]
+   [next #:mutable]) #:transparent)
+
+(define (make-queue)
+  (queue null null))
+
+(define (queue-empty? q)
+  (null? (queue-front q)))
+
+(define nonempty-queue/c
+  (and/c queue? (not/c queue-empty?)))
+
+(define (queue-push-front x q)
+  (define new-elem (node null x (queue-front q)))
+  (if (queue-empty? q)
+      (set-queue-back! q new-elem)
+      (set-node-prev! (queue-front q) new-elem))
+  (set-queue-front! q new-elem))
+
+(define (queue-push-back x q)
+  (define new-elem (node (queue-back q) x null))
+  (if (queue-empty? q)
+      (set-queue-front! q new-elem)
+      (set-node-next! (queue-back q) new-elem))
+  (set-queue-back! q new-elem))
+
+(define/contract (queue-pop-front q)
+  (-> nonempty-queue/c any/c)
+  (define pop-elem (queue-front q))
+  (if (equal? pop-elem (queue-back q)) 
+      (set-queue-back! q null) 
+      (set-node-prev! (node-next pop-elem) null)) 
+  (set-queue-front! q (node-next pop-elem))
+  (node-el pop-elem))
+
+(define/contract (queue-pop-back q)
+  (-> nonempty-queue/c any/c)
+  (define pop-elem (queue-back q))
+  (if (equal? pop-elem (queue-front q))
+      (set-queue-front! q null) 
+      (set-node-next! (node-prev pop-elem) null)) 
+  (set-queue-back! q (node-prev pop-elem)) 
+  (node-el pop-elem))
+
+(define test (make-queue))
+(queue-push-back 1 test)
+(queue-push-back 2 test)
+(queue-push-back 3 test)
+test
+(queue-pop-back test)
+test
+(queue-pop-front test)
+test
+(queue-pop-front test)
+test

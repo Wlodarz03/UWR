@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9016B5E5-6731-4C18-B315-F2CF9918FB23}|Zad1\\Zad1.csproj|C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad1\\zad1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9016B5E5-6731-4C18-B315-F2CF9918FB23}|Zad1\\Zad1.csproj|solutionrelative:zad1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9016B5E5-6731-4C18-B315-F2CF9918FB23}|Zad1\\Zad1.csproj|c:\\users\\hp\\desktop\\studia\\5 semestr\\asp\\lista5\\zad1\\zad1\\views\\home\\start.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9016B5E5-6731-4C18-B315-F2CF9918FB23}|Zad1\\Zad1.csproj|solutionrelative:zad1\\views\\home\\start.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9016B5E5-6731-4C18-B315-F2CF9918FB23}|Zad1\\Zad1.csproj|C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad1\\zad1\\models\\homestartmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9016B5E5-6731-4C18-B315-F2CF9918FB23}|Zad1\\Zad1.csproj|solutionrelative:zad1\\models\\homestartmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9016B5E5-6731-4C18-B315-F2CF9918FB23}|Zad1\\Zad1.csproj|C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad1\\zad1\\views\\home\\print.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9016B5E5-6731-4C18-B315-F2CF9918FB23}|Zad1\\Zad1.csproj|solutionrelative:zad1\\views\\home\\print.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9016B5E5-6731-4C18-B315-F2CF9918FB23}|Zad1\\Zad1.csproj|C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad1\\zad1\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9016B5E5-6731-4C18-B315-F2CF9918FB23}|Zad1\\Zad1.csproj|solutionrelative:zad1\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Start.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad1\\Zad1\\Views\\Home\\Start.cshtml",
+              "RelativeDocumentMoniker": "Zad1\\Views\\Home\\Start.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad1\\Zad1\\Views\\Home\\Start.cshtml",
+              "RelativeToolTip": "Zad1\\Views\\Home\\Start.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T15:56:07.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Print.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad1\\Zad1\\Views\\Home\\Print.cshtml",
+              "RelativeDocumentMoniker": "Zad1\\Views\\Home\\Print.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad1\\Zad1\\Views\\Home\\Print.cshtml",
+              "RelativeToolTip": "Zad1\\Views\\Home\\Print.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T15:51:43.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeStartModel.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad1\\Zad1\\Models\\HomeStartModel.cs",
+              "RelativeDocumentMoniker": "Zad1\\Models\\HomeStartModel.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad1\\Zad1\\Models\\HomeStartModel.cs",
+              "RelativeToolTip": "Zad1\\Models\\HomeStartModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T15:48:43.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad1\\Zad1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Zad1\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad1\\Zad1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Zad1\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAkwAUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T15:47:02.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad1\\Zad1\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "Zad1\\App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad1\\Zad1\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "Zad1\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T14:32:21.574Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

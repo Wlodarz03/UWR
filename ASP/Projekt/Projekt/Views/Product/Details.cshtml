@@ -1,0 +1,22 @@
+﻿@model Projekt.Models.Product
+
+<h2>Szczegóły produktu</h2>
+
+<div>
+    <h3>@Model.Name</h3>
+    <p><strong>Opis:</strong> @Model.Description</p>
+    <p><strong>Cena:</strong> @Model.Price.ToString("C2") PLN</p>
+</div>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-warning">
+        @TempData["Message"]
+    </div>
+}
+
+<form method="post" action="@Url.Action("AddToCart", "Cart", new { productId = Model.Id })">
+    <button type="submit" class="btn btn-primary">Dodaj do koszyka</button>
+</form>
+
+<a href="@Url.Action("Index", "Product")">Powrót do listy produktów</a>

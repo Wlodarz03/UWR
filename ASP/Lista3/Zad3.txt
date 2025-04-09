@@ -1,0 +1,43 @@
+Obiekt Request - żądanie HTTP od klienta do serwera, umożliwia dostęp do
+nagłówków żądania, danych formularzy, ciasteczek i innych informacji o żądaniu.
+
+Jak odczytać nagłówek żądania?
+string nagłówek = Request.Headers["Nazwa nagłówka"]
+
+Obiekt Response pozwala na zarządzanie odpowiedzią HTTP, którą serwer wysyła do klienta
+pozwala na ustawianie nagłówków odpowiedzi, kontrolowanie kodu statusu HTTP,
+przesyłanie danych w odpowiedzi oraz zarządzanie tym, co trafia do klienta.
+
+Jak stworzyć nowy nagłówek odpowiedzi?
+Response.Headers["Nowy nagłówek"] = "custom value" - jeżeli istnieje to nadpisze
+lub
+Response.Headers.Add("Nowy nagłówek", "custom value") - jeżeli istnieje to zgłosi wyjątek
+
+Obiekt Server jest używany do różnych operacji związanych z serwerem, takich jak
+mapowanie ścieżek.
+
+Jak mapować ścieżki względne na ścieżki fizyczne?
+
+ścieżka względna - jest to ścieżka, która jest podana w stosunku do
+katalogu głównego aplikacji.
+
+ścieżka fizyczna - jest to fizyczna ścieżka na serwerze, która odpowiada ścieżce względnej.
+
+string fizyczna = Server.MapPath("względna")
+
+HttpContext.Current to statyczna właściwość w ASP.NET, która pozwala uzyskać
+dostęp do bieżącego kontekstu HTTP w aplikacji webowej.
+Jest to obiekt HttpContext, który zawiera informacje o bieżącym żądaniu HTTP,
+odpowiedzi HTTP oraz inne dane związane z aktualnym stanem sesji,
+użytkownika i aplikacji.
+Jest używana w sytuacjach, gdy nie masz bezpośredniego dostępu do kontekstu.
+
+Odczyt nagłówka:
+string userAgent = HttpContext.Current.Request.UserAgent;
+
+Dodanie nagłówka:
+HttpContext.Current.Response.Headers["Custom-Header"] = "My custom value";
+
+Mapowanie ścieżki:
+string fizyczna = HttpContext.Current.Server.MapPath(względna);
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz Kontaktowy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2 class="form-heading">Formularz Kontaktowy</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Imię (wymagane):</label>
+                <input type="text" id="name" name="name" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="surname">Nazwisko:</label>
+                <input type="text" id="surname" name="surname" class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail (wymagane):</label>
+                <input type="email" id="email" name="email" class="form-input" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Telefon:</label>
+                <input type="tel" id="phone" name="phone" class="form-input" pattern="\d{9}">
+            </div>
+
+            <div class="form-group">
+                <label for="reason">Powód kontaktu (wymagane):</label>
+                <select id="reason" name="reason" class="form-input" required>
+                    <option value="">Wybierz...</option>
+                    <option value="support">Wsparcie techniczne</option>
+                    <option value="question">Pytanie</option>
+                    <option value="feedback">Opinie</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Wiadomość (wymagane):</label>
+                <textarea id="message" name="message" class="form-input" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    Zapisz się do newslettera
+                </label>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="form-button">Wyślij</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

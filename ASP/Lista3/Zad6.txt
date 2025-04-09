@@ -1,0 +1,5 @@
+Plik app_offline.htm w aplikacjach ASP.NET służy do tymczasowego wyłączania 
+aplikacji podczas wykonywania działań konserwacyjnych lub aktualizacji. 
+Gdy ten plik zostanie umieszczony w głównym katalogu aplikacji (folderze głównym witryny), 
+ASP.NET automatycznie wyłącza aplikację i przestaje przetwarzać żądania.
+Zamiast tego wszystkim użytkownikom serwisu wyświetla zawartość pliku app_offline.htm.

@@ -1,0 +1,19 @@
+a) hyperlink - użytkownik klika na link w przeglądarce
+co powoduje wysłanie żądania HTTP GET, aby pobrać
+nową stronę.
+
+b) POST między stronami - formularz na stronie X 
+wysyła dane do strony Y. Użytkowni wypełnia formularz
+wysyła żądanie POST, które zawiera dane formularza.
+Przeglądarka przenosi użytkownika do strony Y, która
+odbiera i przetwarza dane.
+
+c) Response.Redirect na serwerze - Serwer wysyła
+odpowiedź do przeglądarki z kodem 302 i nowym adresem
+URL, do którego przeglądarka ma się przekierować.
+Przeglądarka otrzymuje nowy URL i automatycznie
+wysyła nowe żądanie GET.
+
+d) Server.Transfer na serwerze - serwer transferuje
+wykonanie do innej strony w ramach tego samego
+żądania HTTP, nie zmieniając adresu URL.

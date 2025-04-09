@@ -1,0 +1,18 @@
+#lang racket
+
+;S-> M | S + M | S - M
+;M-> M*P | M/P | P
+;P-> F | F^P
+;F-> N | -F | F! | (S)
+;N->liczba
+
+
+;N-> D | DZN  
+;D-> 1|2|3|4|5|6|7|8|9
+;Z-> 0|e|ZZ
+
+
+;ewentualnie bez Z w (N) jak nie chcemy dzielic przez 0 wtedy mozna 
+;wszedzie dodac S+0,M*0 itp.
+
+;przykład (2^3)! S->M->P->F->F!->(S)!->(M)!->(P)!->(F^P)!->(F^F)!->(N^N)!->(D^D)!->(2^3)!

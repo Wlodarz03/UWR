@@ -1,0 +1,102 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista4\\Zad1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5C35C2A3-2266-41AA-8237-820C64248516}|Zad1\\Zad1.csproj|c:\\users\\hp\\desktop\\studia\\5 semestr\\asp\\lista4\\zad1\\zad1\\customroute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C35C2A3-2266-41AA-8237-820C64248516}|Zad1\\Zad1.csproj|solutionrelative:zad1\\customroute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C35C2A3-2266-41AA-8237-820C64248516}|Zad1\\Zad1.csproj|C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista4\\Zad1\\zad1\\customhttphandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C35C2A3-2266-41AA-8237-820C64248516}|Zad1\\Zad1.csproj|solutionrelative:zad1\\customhttphandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C35C2A3-2266-41AA-8237-820C64248516}|Zad1\\Zad1.csproj|C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista4\\Zad1\\zad1\\foo\\bar\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C35C2A3-2266-41AA-8237-820C64248516}|Zad1\\Zad1.csproj|solutionrelative:zad1\\foo\\bar\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C35C2A3-2266-41AA-8237-820C64248516}|Zad1\\Zad1.csproj|C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista4\\Zad1\\zad1\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C35C2A3-2266-41AA-8237-820C64248516}|Zad1\\Zad1.csproj|solutionrelative:zad1\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C35C2A3-2266-41AA-8237-820C64248516}|Zad1\\Zad1.csproj|C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista4\\Zad1\\zad1\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{5C35C2A3-2266-41AA-8237-820C64248516}|Zad1\\Zad1.csproj|solutionrelative:zad1\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista4\\Zad1\\Zad1\\foo\\bar\\index.html",
+              "RelativeDocumentMoniker": "Zad1\\foo\\bar\\index.html",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista4\\Zad1\\Zad1\\foo\\bar\\index.html",
+              "RelativeToolTip": "Zad1\\foo\\bar\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-12T13:11:51.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomHttpHandler.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista4\\Zad1\\Zad1\\CustomHttpHandler.cs",
+              "RelativeDocumentMoniker": "Zad1\\CustomHttpHandler.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista4\\Zad1\\Zad1\\CustomHttpHandler.cs",
+              "RelativeToolTip": "Zad1\\CustomHttpHandler.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBMAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T13:01:53.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomRoute.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista4\\Zad1\\Zad1\\CustomRoute.cs",
+              "RelativeDocumentMoniker": "Zad1\\CustomRoute.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista4\\Zad1\\Zad1\\CustomRoute.cs",
+              "RelativeToolTip": "Zad1\\CustomRoute.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAwDgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T12:45:29.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista4\\Zad1\\Zad1\\Web.config",
+              "RelativeDocumentMoniker": "Zad1\\Web.config",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista4\\Zad1\\Zad1\\Web.config",
+              "RelativeToolTip": "Zad1\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-12T12:42:59.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista4\\Zad1\\Zad1\\Global.asax.cs",
+              "RelativeDocumentMoniker": "Zad1\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista4\\Zad1\\Zad1\\Global.asax.cs",
+              "RelativeToolTip": "Zad1\\Global.asax.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T12:41:12.744Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

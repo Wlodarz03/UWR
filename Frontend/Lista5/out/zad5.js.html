@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: zad5.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: zad5.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @typedef {Object} Product
+ * @property {number} id - Unikalny identyfikator produktu
+ * @property {string} name - Nazwa produktu
+ * @property {number} quantity - Liczba sztuk do zakupienia
+ * @property {Date} dueDate - Data, do której produkt powinien być zakupiony
+ * @property {boolean} purchased - Status informujący, czy produkt został zakupiony
+ * @property {number} [price] - Opcjonalna cena za sztukę (dotyczy tylko zakupionych produktów)
+ */
+
+/**
+ * @type {Product[]}
+ */
+let shoppingList = [];
+
+/**
+ * Dodaje nowy produkt do listy zakupów
+ * @param {string} name - Nazwa produktu
+ * @param {number} quantity - Liczba sztuk
+ * @param {string} dueDateString - Data w dobrym formacie
+ * @returns {void}
+ */
+function addProduct(name, quantity, dueDateString) {
+    var id = Math.floor(Math.random() * 1e9);
+    var dueDate = new Date(dueDateString);
+    shoppingList.push({ id: id, name: name, quantity: quantity, dueDate: dueDate, purchased: false });
+}
+
+/**
+ * Usuwa produkt na podstawie id
+ * @param {number} id
+ * @returns {void}
+ */
+function removeProduct(id) {
+    shoppingList = shoppingList.filter(function(product) {
+        return product.id !== id;
+    });
+}
+
+/**
+ * Edytuje nazwę produktu
+ * @param {number} id 
+ * @param {string} newName 
+ * @returns {void}
+ */
+function editProductName(id, newName) {
+    var product = shoppingList.find(function(p) {
+        return p.id === id;
+    });
+    if (product) product.name = newName;
+}
+
+/**
+ * Edytuje status zakupu produktu
+ * @param {number} id 
+ * @param {boolean} purchased 
+ * @returns {void}
+ */
+function editProductStatus(id, purchased) {
+    var product = shoppingList.find(function(p) {
+        return p.id === id;
+    });
+    if (product) product.purchased = purchased;
+}
+
+/**
+ * Edytuje liczbę sztuk produktu
+ * @param {number} id 
+ * @param {number} newQuantity 
+ * @returns {void}
+ */
+function editProductQuantity(id, newQuantity) {
+    var product = shoppingList.find(function(p) {
+        return p.id === id;
+    });
+    if (product) product.quantity = newQuantity;
+}
+
+/**
+ * Edytuje datę zakupu produktu
+ * @param {number} id 
+ * @param {string} newDueDateString 
+ * @returns {void}
+ */
+function editProductDueDate(id, newDueDateString) {
+    var product = shoppingList.find(function(p) {
+        return p.id === id;
+    });
+    if (product) product.dueDate = new Date(newDueDateString);
+}
+
+/**
+ * Zmienia kolejność produktów
+ * @param {number} fromIndex - Aktualna pozycja
+ * @param {number} toIndex - Nowa pozycja
+ * @returns {void}
+ */
+function moveProduct(fromIndex, toIndex) {
+    if (fromIndex &lt; 0 || toIndex &lt; 0 || fromIndex >= shoppingList.length || toIndex >= shoppingList.length) return;
+    var movedProduct = shoppingList.splice(fromIndex, 1)[0];
+    shoppingList.splice(toIndex, 0, movedProduct);
+}
+
+/**
+ * Ustawia cenę dla zakupionego produktu
+ * @param {number} id 
+ * @param {number} price 
+ * @returns {void}
+ */
+function setProductPrice(id, price) {
+    var product = shoppingList.find(function(p) {
+        return p.id === id;
+    });
+    if (product &amp;&amp; product.purchased) {
+        product.price = price;
+    }
+}
+
+/**
+ * Usuwa wszystkie produkty, które nie mają dzisiejszej daty
+ * @returns {void}
+ */
+function getProductsToBuyToday(){
+    var date = new Date();
+    date.setHours(0, 0, 0, 0);
+    shoppingList = shoppingList.filter(function(product){
+        if (!product.purchased){
+            var dueDate = new Date(product.dueDate);
+            dueDate.setHours(0, 0, 0, 0);
+            return dueDate.getTime() === date.getTime();
+        }
+    })
+}
+
+/**
+ * Oblicza koszt zakupów danego dnia
+ * @param {string} dateString - Data w dobrym formacie
+ * @returns {number} - Całkowity koszt zakupów
+ */
+function calculateTotalCost(dateString) {
+    var date = new Date(dateString).toDateString();
+    return shoppingList.reduce(function(sum, product) {
+        if (product.purchased &amp;&amp; product.dueDate.toDateString() === date &amp;&amp; product.price !== undefined) {
+            return sum + product.price * product.quantity;
+        }
+        return sum;
+    }, 0);
+}
+
+/**
+ * Masowe formatowanie listy zakupów
+ * @param {number[]} ids - Lista ID produktów do zmodyfikowania
+ * @param {function(Product): void} modifyFunction - Funkcja modyfikująca
+ * @returns {void}
+ */
+function ModifyProducts(ids, modifyFunction) {
+    shoppingList.forEach(function(product) {
+        if (ids.includes(product.id)) {
+            modifyFunction(product);
+        }
+    });
+}
+
+/**
+ * Przykładowa funkcja modyfikująca - ustawiająca ilość na 42
+ * @param {Product} product
+ * @returns {void}
+ */
+function ChangeQuantity(product) {
+    product.quantity = 42;
+}
+
+addProduct("Mleko", 2, "2025-04-02");
+addProduct("Chleb", 1, "2025-04-03");
+addProduct("Jajka", 12, "2025-04-03");
+removeProduct(shoppingList[2].id);
+editProductName(shoppingList[0].id, "Jogurt");
+editProductDueDate(shoppingList[1].id, "2025-04-03");
+editProductQuantity(shoppingList[1].id, 2);
+moveProduct(0, 1);
+//getProductsToBuyToday();
+console.log("Lista zakupów:", shoppingList);
+
+editProductStatus(shoppingList[1].id, true);
+setProductPrice(shoppingList[1].id, 5);
+console.log("Koszt zakupów na 2025-04-02:", calculateTotalCost("2025-04-02"));
+
+ModifyProducts([shoppingList[0].id, shoppingList[1].id], ChangeQuantity);
+console.log("Lista po masowej modyfikacji:", shoppingList);
+
+//npm install -g jsdoc
+//npx jsdoc zad5.js</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#ChangeQuantity">ChangeQuantity</a></li><li><a href="global.html#ModifyProducts">ModifyProducts</a></li><li><a href="global.html#addProduct">addProduct</a></li><li><a href="global.html#calculateTotalCost">calculateTotalCost</a></li><li><a href="global.html#editProductDueDate">editProductDueDate</a></li><li><a href="global.html#editProductName">editProductName</a></li><li><a href="global.html#editProductQuantity">editProductQuantity</a></li><li><a href="global.html#editProductStatus">editProductStatus</a></li><li><a href="global.html#getProductsToBuyToday">getProductsToBuyToday</a></li><li><a href="global.html#moveProduct">moveProduct</a></li><li><a href="global.html#removeProduct">removeProduct</a></li><li><a href="global.html#setProductPrice">setProductPrice</a></li><li><a href="global.html#shoppingList">shoppingList</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Thu Apr 03 2025 13:12:08 GMT+0200 (czas środkowoeuropejski letni)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

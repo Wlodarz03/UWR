@@ -1,0 +1,12 @@
+Student wywołuje show() na UsosWebPage  
+UsosWebPage wywołuje getStudentGradeInfo() na GradeController  
+GradeController pobiera kursy studenta, wywołując getCourses() na Student  
+
+Dla każdego kursu:  
+  - Wywołuje getMark(student) na Course, aby pobrać ocenę  
+  - Wywołuje getValue() na Course, aby pobrać wartość oceny  
+
+UsosWebPage generuje układ strony (pageLayout) 
+
+Czy na podstawie diagramu można napisać jednoznaczny i precyzyjny kod?
+Nie, ponieważ nie znamy typów, nie wiemy co będzie zwracane. Nie obsługujemy błędów - co jak coś zwróci null? to co robimy. Dlatego może być ciężko

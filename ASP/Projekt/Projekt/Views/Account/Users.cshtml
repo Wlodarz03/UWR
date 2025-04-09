@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Projekt.Models.User>
+
+<h2>Lista użytkowników</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Login</th>
+            <th>Hasło</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Username</td>
+                <td>@user.Password</td>
+            </tr>
+        }
+    </tbody>
+</table>

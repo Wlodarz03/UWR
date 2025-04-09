@@ -1,0 +1,52 @@
+﻿﻿@model Zad1.Models.HomeStartModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Submission Form</title>
+</head>
+<body>
+    @using (Html.BeginForm("Start", "Home", FormMethod.Post))
+    {
+        <div>
+            <h3>Deklaracja zadan</h3>
+
+            <label for="name">Imię:</label>
+            @Html.TextBoxFor(m => m.Name)
+            @Html.ValidationMessageFor(m => m.Name)<br />
+
+            <label for="surname">Nazwisko:</label>
+            @Html.TextBoxFor(m => m.Surname)
+            @Html.ValidationMessageFor(m => m.Surname)<br />
+
+            <label for="subject">Przedmiot:</label>
+            @Html.TextBoxFor(m => m.Subject)
+            @Html.ValidationMessageFor(m => m.Subject)<br />
+
+            <label for="setNumber">Numer Zestawu:</label>
+            @Html.TextBoxFor(m => m.SetNumber)
+            @Html.ValidationMessageFor(m => m.SetNumber)<br />
+
+            <label for="date">Data:</label>
+            @Html.TextBoxFor(m => m.Date)
+            @Html.ValidationMessageFor(m => m.Date)<br />
+
+            <table>
+                @for (int i = 0; i < Model.Tasks.Count; i++)
+                {
+                    <tr>
+                        <td>Zadanie @(i + 1):</td>
+                        <td>
+                            @Html.TextBoxFor(m => m.Tasks[i], new { type = "number", style = "width: 50px;" })
+                        </td>
+                    </tr>
+                }
+            </table>
+
+            <br />
+            <button type="submit">Potwierdz deklaracje</button>
+        </div>
+    }
+</body>
+</html>
+

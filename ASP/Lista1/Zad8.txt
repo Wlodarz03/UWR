@@ -1,0 +1,13 @@
+Pula aplikacji -> zad6 -> ustawienia zawaansowane -> tożsamość zmieniać
+na ap1 i ap2 (ap1 ma dostęp a ap2 nie ma) 
+
+Dlaczego nie używać tożsamości LocalSystem dla puli aplikacji?
+
+Tożsamość LocalSystem ma bardzo szerokie uprawnienia w systemie operacyjnym, co oznacza, że aplikacja ASP.NET uruchamiana z takimi uprawnieniami może mieć dostęp do wszystkich zasobów systemowych, takich jak pliki, rejestr czy inne zasoby sieciowe.
+
+Dlaczego to jest niebezpieczne?
+
+    Zwiększone ryzyko ataku: W przypadku podatności w aplikacji napastnik może uzyskać pełny dostęp do systemu operacyjnego, co stanowi poważne zagrożenie dla bezpieczeństwa.
+    Brak kontroli dostępu: Tożsamość LocalSystem nie ogranicza dostępu do plików ani innych zasobów, co sprawia, że każda podatność w aplikacji może mieć katastrofalne skutki.
+
+Zalecenie: Zamiast tego, zawsze przypisuj aplikacjom niestandardowe konta z minimalnymi uprawnieniami, które są wystarczające do wykonywania określonych zadań

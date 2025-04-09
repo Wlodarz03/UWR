@@ -1,0 +1,19 @@
+SRP (Single Responsibility Principle) – Zasada Pojedynczej Odpowiedzialności
+
+Każda klasa (lub moduł) powinna mieć jedną odpowiedzialność, czyli jeden powód do zmiany.
+
+SRP dba o to, aby klasa była odpowiedzialna za jedno konkretne zadanie.
+Naruszenie SRP występuje, gdy klasa zajmuje się wieloma niezależnymi funkcjonalnościami, np. jednocześnie pobiera dane, przetwarza je i generuje raport.
+
+ISP (Interface Segregation Principle) – Zasada Segregacji Interfejsów
+
+Klient (klasa implementująca interfejs) nie powinien być zmuszany do implementacji metod, których nie używa.
+
+ISP dba o to, aby interfejsy były małe i konkretne, zamiast jednego dużego interfejsu z metodami, których część może być niepotrzebna dla niektórych klas.
+Naruszenie ISP występuje, gdy klasa implementuje interfejs z wieloma metodami, z których niektóre jej nie dotyczą.
+
+SRP dotyczy klas, ISP interfejsów
+SRP - Klasa powinna mieć tylko jedną odpowiedzialność
+ISP - Klasy powinny implementować tylko te metody, które faktycznie używają
+
+Rozwiazanie w obu przypadkach to podzial na odpowiednio mniejsze klasy/interfejsy wyspecjalizowane na jedną odpowiedzialnosc

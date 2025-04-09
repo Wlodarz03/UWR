@@ -1,0 +1,6 @@
+1. Dodano witrynę ap1.myserver.com
+2. Windows/System32/Drivers/etc/hosts dodano 127.0.0.1 ap1.myserver.com
+3. C:\inetpub\ap1 utworzony
+4. Przydzielono uprawnienia do odczytu z ap1
+5. W folderze ap1 - plik index.html
+6. Strona pokazuje sie w przegladarce :)

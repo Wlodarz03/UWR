@@ -1,0 +1,46 @@
+Kontener Application
+Zakres: Globalny dla całej aplikacji, niezależny od użytkownika.
+Czas życia: Działa przez cały czas życia aplikacji,
+ od jej uruchomienia do zamknięcia.
+Zastosowanie: Używa się go do przechowywania danych, które powinny być dostępne
+ dla wszystkich użytkowników aplikacji, np. ustawienia globalne, dane statyczne itp.
+Dostęp: Application["key"]
+
+Kontener Session
+Zakres: Dotyczy tylko jednego użytkownika i jest dostępny w trakcie jednej sesji.
+Czas życia: Trwa przez całą sesję użytkownika, która kończy się,
+ gdy użytkownik zamknie przeglądarkę lub po określonym czasie nieaktywności.
+Zastosowanie: Używa się go do przechowywania danych specyficznych dla danego
+ użytkownika, takich jak dane logowania, koszyk zakupowy, ustawienia personalne itp.
+Dostęp: Session["key"]
+
+Kontener Items
+Zakres: Przechowuje dane tylko na czas trwania żądania HTTP.
+ To oznacza, że dane są dostępne w ramach jednej odpowiedzi na żądanie.
+Czas życia: Tylko w ramach jednego żądania HTTP.
+ Po zakończeniu żądania dane zostaną usunięte.
+Zastosowanie: Idealne do przechowywania danych, które mają być dostępne tylko
+ podczas przetwarzania bieżącego żądania, np. obiekty tymczasowe,
+ które nie są potrzebne po zakończeniu żądania.
+Dostęp: Items["key"]
+
+(Przykłady w WebApplication 3 z listy 2)
+
+Pseudosingleton - Wzorzec ten ułatwia dostęp do danych kontenera poprzez
+zawinięcie ich w statyczną właściwość z jedynym akcesorem „get”.
+Ale zamiast używać statycznego pola zaplecza (jak robi to Singleton),
+Pseudosingleton przechowuje dane w jednym z trzech kontenerów po stronie serwera.
+Zapewnia on zachowanie jednolitej instancji (czyli jednej współdzielonej instancji)
+przy jednoczesnej elastyczności w korzystaniu z różnych czasów życia obiektów
+w zależności od kontenera serwerowego (np. Application, Session lub Items).
+
+Dostęp do którego kontenera powinien być dodatkowo chroniony przed problemem
+dostępu z wielu równoległych wątków (lock) w aksesorze dostępu (get) i dlaczego?
+
+Dostęp do Application powinien być chroniony (lock), ponieważ obiekty w tym
+kontenerze mogą być wykorzystywane przez wiele wątków na raz.
+
+Którego kontenera mogłoby nie być?
+
+Kontenera Items, ponieważ jest równoważny z mechanizmem zmiennych lokalnych 
+w obrębie danego żądania.

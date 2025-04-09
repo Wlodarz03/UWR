@@ -1,0 +1,46 @@
+﻿
+@model Zad1.Models.HomeStartModel
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Deklaracja zadan</title>
+</head>
+<body>
+    <div>
+        <table border="1">
+            <tr>
+                <th>Imie</th>
+                <td>@Model.Name</td>
+                <th>Nazwisko</th>
+                <td>@Model.Surname</td>
+                <th>Zajecia</th>
+                <td>@Model.Subject</td>
+                <th>Nr Listy</th>
+                <td>@Model.SetNumber</td>
+                <th>Data</th>
+                <td>@Model.Date</td>
+            </tr>
+        </table>
+        <table border="1">
+            <tr>
+                @for (int i = 0; i < Model.Tasks.Count; i++)
+                {
+                    <th style="width:10%">Zadanie @(i+1)</th>
+                }
+            </tr>
+            <tr>
+                @for (int i = 0; i < Model.Tasks.Count; i++)
+                {
+
+                    <td>@Model.Tasks[i]</td>
+                }
+            </tr>
+
+
+        </table>
+    </div>
+</body>
+</html>
+

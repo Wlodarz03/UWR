@@ -1,0 +1,70 @@
+;1
+(* (+ 2 2)    5)
+;Iloczyn 5*4
+
+;2
+;(* (+ 2 2) (5))
+;blad bo 5 to nie procedura zle - (5)
+
+;3
+;(*(+(2 2) 5))
+;blad bo 2 2 to nie procedura zle - (2 2)
+
+;4
+(*(+ 2
+     2)5)
+;iloczyn 5*4
+
+;5
+;(5*4)
+;blad, nie jest prefixowo
+
+;6
+;(5 * (2 + 2))
+;blad, nie jest prefixowo
+
+;7
+;((+ 2 3))
+;blad, wyjdzie (5) a 5 to nie procedura
+
+;8
++
+;procedura +, brak bledu
+
+;9
+(define + (* 2 3))
+; +=6 , brak bledu
+
+;10
++
+;teraz jest to po prostu 6, brak bledu
+
+;11
+(* 2 +)
+;iloczyn 2*6, brak bledu
+
+;12
+(define (five) 5)
+;(five)=5, brak bledu
+
+;13
+(define four 4)
+;four=4, brak bledu
+
+;14
+(five)
+;po prostu 5, brak bledu
+
+;15
+four
+;po prostu 4, brak bledu
+
+;16
+five
+; procedura five
+
+;17
+;(four)
+;blad bo four to nie procedura
+
+;bledy : 2,3,5,6,7,17

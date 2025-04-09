@@ -1,0 +1,13 @@
+( if ifCond ifTrue ifFalse) <=> ((ifCond and ifTrue) or ifFalse)
+
+1. ifCond = True
+(ifTrue or ifFalse) = ifTrue
+
+2. ifCond = False
+(#f or ifFalse) = ifFalse
+
+Racket : (or (and ifCond ifTrue) ifFalse)
+
+
+
+

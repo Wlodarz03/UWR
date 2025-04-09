@@ -1,0 +1,30 @@
+#lang plait
+
+(define-type Prop
+  (var [v : String])
+  (conj [l : Prop] [r : Prop])
+  (disj [l : Prop] [r : Prop])
+  (neg [f : Prop]))
+
+(define (eval slow wart)
+  (cond
+    [(var? wart) (some-v (hash-ref slow (var-v wart)))]
+    [(conj? wart)
+     (and (eval slow (conj-l wart))
+         (eval slow (conj-r wart)))]
+    [(disj? wart)
+     (or (eval slow (disj-l wart))
+         (eval slow (disj-r wart)))]
+    [(neg? wart)
+     (not (eval slow (neg-f wart)))]))
+
+(define my-prop
+  (conj (var "p") (disj (var "p") (neg (var "r")))))
+
+(define my-hash (hash  (list (pair"p" #t) (pair "r" #f))))
+(define my-hash2 (hash  (list (pair "p" #f) (pair "r" #f))))
+;my-prop (p ^ (p v ~r))
+;z wart my-hash #t
+;z wart my-hash2 #f
+(eval my-hash my-prop)
+(eval my-hash2 my-prop)

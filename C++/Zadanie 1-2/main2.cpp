@@ -1,0 +1,84 @@
+#include <iostream>
+#include <cmath>
+#include "nag.h"
+
+using namespace std;
+
+int main(){
+    punkt p(2,3);
+    punkt _p(4,0);
+    odcinek o2(p,_p);
+    punkt zero(0,0);
+    punkt p1(1,1);
+    punkt p2(4,3);
+    punkt p3(2,5);
+    punkt p4(2,3);
+    punkt p5(0,5);
+    punkt p6(-2,3);
+    prosta pr(1,-1,0);
+    wektor v1(2,4);
+    wektor v2(-2,-4);
+    odcinek o(p1,p2);
+    trojkat t1(p1,p2,p3);
+    trojkat t2(p4,p5,p6);
+    punkt q1(-3,0);
+    punkt q2(3,0);
+    punkt q3(0,3);
+    punkt q4(-2,0);
+    punkt q5(2,0);
+    punkt q6(0,2);
+    trojkat t3(q1,q2,q3);
+    trojkat t4(q4,q5,q6);
+    cout<< "Testy punkt"<<endl;
+    p1.przesun(v1);
+    cout << p1.x << " " << p1.y <<endl;
+    p1.przesun(v2);
+    p1.obroc(zero,180);
+    cout << p1.x <<" "<< p1.y <<endl;
+    p1.obroc(zero,180);
+    p1.symetria_punkt(zero);
+    cout<< p1.x << " " << p1.y <<endl;
+    p1.symetria_punkt(zero);
+    p1.symetria_os(pr);
+    cout << p1.x <<" " <<p1.y <<endl;
+    cout<<"Testy odc"<<endl;
+    o.przesun_odc(v1);
+    cout << o.p1.x<<" "<< o.p1.y << " "<<o.p2.x<<" "<<o.p2.y <<endl;
+    o.przesun_odc(v2);
+    o.obroc_odc(zero,180);
+    cout<<o.p1.x <<" "<< o.p1.y << " "<<o.p2.x<<" "<<o.p2.y<<endl;
+    o.obroc_odc(zero,180);
+    o.symetria_odc_punkt(zero);
+    cout << o.p1.x << " "<<o.p1.y<< " "<<o.p2.x << " "<<o.p2.y<<endl;
+    o.symetria_odc_punkt(zero);
+    o.symetria_odc_os(pr);
+    cout << o.p1.x << " "<<o.p1.y<< " "<<o.p2.x << " "<<o.p2.y<<endl;
+    o.symetria_odc_os(pr);
+    cout << czy_rownolegle(o,o2)<<endl;
+    cout << czy_prostopadle(o,o2)<<endl;
+    cout << o.dlugosc_odc()<<endl;
+    cout << o.czy_w_odc(p1)<<endl;
+    cout << o.czy_w_odc(zero)<<endl; 
+    cout << distance_bet_2points(p1,p2)<<endl;
+    cout << "Testy trojkat"<<endl;
+    cout << t1.obwod()<<endl;
+    cout << t1.pole()<<endl;
+    cout << t1.czy_w_troj(p4)<<endl;
+    cout << t1.czy_w_troj(p5)<<endl;
+    t1.przesun_troj(v1);
+    cout << t1.p1.x<<" "<<t1.p1.y << " "<< t1.p2.x<<" "<<t1.p2.y <<" "<< t1.p3.x<<" "<<t1.p3.y<<endl;
+    t1.przesun_troj(v2);
+    t1.obrot(zero,180);
+    cout << t1.p1.x<<" "<<t1.p1.y << " "<< t1.p2.x<<" "<<t1.p2.y <<" "<< t1.p3.x<<" "<<t1.p3.y<<endl;
+    t1.obrot(zero,180);
+    t1.symetria_troj_punkt(zero);
+    cout << t1.p1.x<<" "<<t1.p1.y << " "<< t1.p2.x<<" "<<t1.p2.y <<" "<< t1.p3.x<<" "<<t1.p3.y<<endl;
+    t1.symetria_troj_punkt(zero);
+    t1.symetria_troj_os(pr);
+    cout << t1.p1.x<<" "<<t1.p1.y << " "<< t1.p2.x<<" "<<t1.p2.y <<" "<< t1.p3.x<<" "<<t1.p3.y<<endl;
+    t1.symetria_troj_os(pr);
+    cout << czy_zawiera_sie_1w2(t4,t3)<<endl;
+    cout << czy_zawiera_sie_1w2(t3,t4)<<endl;
+    cout << czy_troj_rozlaczny(t3,t4)<<endl;
+    return 0;
+}

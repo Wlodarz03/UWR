@@ -1,0 +1,30 @@
+Czym różni się serwer deweloperski(IIS Express) od serwera produkcyjnego(IIS)?
+
+Różnice między IIS Express a IIS
+IIS Express działa jak działa przeglądarka a IIS zawsze (ISS Express light)
+
+Gdy serwer deweloperski i produkcyjny są na tej samej maszynie to najwygodniej
+użyć File System.
+
+Na zdalny serwer produkcyjny - FTP, ale nie obsługuje automatycznej konfiguracji
+ bazy danych ani zaawansowanego zarządzania aplikacjami.
+
+IIS Express (serwer deweloperski):
+1.Lżejszy, przeznaczony głównie do użytku lokalnego
+ podczas procesu programowania.
+2.Domyślnie uruchamiany tylko dla jednego użytkownika
+ (nie wymaga praw administratora).
+3.Łatwiejszy w konfiguracji, działa z projektami w Visual Studio
+bez większych problemów.
+4.Nie obsługuje zaawansowanych funkcji, takich jak farmy serwerów,
+ pełna integracja z Active Directory czy zaawansowane zarządzanie ruchem.
+
+IIS (serwer produkcyjny):
+1. To pełnoprawny serwer internetowy, używany na środowiskach produkcyjnych,
+ oferujący znacznie więcej funkcji.
+2. Obsługuje farmy serwerów, duże wolumeny ruchu,
+ zaawansowane zabezpieczenia, logowanie i monitorowanie.
+3. Wymaga więcej zasobów oraz uprawnień administracyjnych
+ do instalacji i konfiguracji.
+4.Obsługuje wiele domen i zaawansowane scenariusze
+ zarządzania stronami internetowymi.

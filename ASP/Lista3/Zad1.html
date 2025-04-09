@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <!-- Formularz do żądania POST -->
+    <form id="postForm" action="https://httpbin.org/post" method="post">
+      <input type="hidden" name="p1" value="v1">
+      <input type="hidden" name="p2" value="v2">
+    </form>
+
+    <!-- Link wykonujący żądanie POST
+	onlcick ="document.getElementById('postForm') - wybiera formularz zdefiniowany powyzej
+	.submit() - przesyla formularz, co wywoluje zadanie POST na https://httpbin.org/post
+	return false - Zapobiega domyślnemu zachowaniu linku, czyli nie powoduje przeładowania lub zmiany strony -->
+    <a href="#" onclick="document.getElementById('postForm').submit(); return false;">
+      Żądanie POST
+    </a>
+	
+
+    <!-- Przycisk wykonujący żądanie GET
+	document.location.href = 'https://httpbin.org/get?p1=v1&p2=v2'; - zmienia adres URL na https://httpbin.org/get?p1=v1&p2=v2, wysyłając żądanie GET z parametrami p1=v1 i p2=v2. -->
+    <button onclick="document.location.href='https://httpbin.org/get?p1=v1&p2=v2';">
+      Żądanie GET
+    </button>
+  </body>
+</html>

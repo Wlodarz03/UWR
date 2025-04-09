@@ -1,0 +1,69 @@
+#lang plait
+( define (apply f x ) ( f x ) )
+( define ( compose f g ) ( lambda ( x ) ( f ( g x ) ) ) )
+( define (flip f ) ( lambda ( x y ) ( f y x ) ) )
+( define ( curry f ) ( lambda ( x ) ( lambda ( y ) ( f x y ) ) ) )
+
+(define pa (curry compose))
+;pod pierwszy argument curry, czyli ('a 'b -> 'c) podstawiamy funkcje compose, czyli (('a -> 'b) ('c -> 'a) -> ('c -> 'b))
+;zatem a = (_a->_b)
+;b = (_c -> _a)
+;c = (_c -> _b)
+;funkcja (curry compose) zwroci (a->(b->c))
+;po podstawieniu mamy wiec (('_a->'_b)->(('_c->'_a)->('_c->'_b)))
+
+(define pb (( curry compose ) ( curry compose ) ))
+;w tym przykladzie funkcja z poprzedniego podpunktu przyjmuje jako argument siebie sama
+; zatem a  = (_a->_b)
+; b = ((_c->_a)->(_c->_b))
+; po podstawieniu do tego co zwraca funkcja mamy wiec:
+;((_c->(_a->_b))->(_c->((_c'->_a)->(_c'->_b))))
+;czyli typ:
+;(('_a->('_b -> '_c))->('_a->(('_d->'_b)->('_d->'_c))))
+
+(define pc (( curry compose ) ( curry apply ) ))
+; najpierw curry apply bo tego jeszcze nie znamy
+; a = (x->y)
+; b = x
+; c = y
+;czyli curry apply zwroci
+;('a -> ('b -> 'c))
+;((x->y)->(x->y))
+;po podstawieniu tej funkcji jako argument do (curry compose)
+; a=(x->y)
+; b=(x->y)
+; (( curry compose ) ( curry apply ) ) to zwroci
+; (('_c->(x->y)) -> ('_c->(x->y))
+; (('_a -> ('_b->'_c)) -> ('_a -> ('_b->'_c))))
+
+(define pd (( curry apply ) ( curry compose ) ))
+;curry apply - (('_a -> '_b) -> (('_c -> '_a) -> ('_c -> '_b)))
+;curry compose - (('_a -> '_b) -> (('_c -> '_a) -> ('_c -> '_b)))
+;czyli :
+; a = (x->y)
+; b = ((z -> x) -> (z -> y))
+; curry apply zwraca ('_a -> '_b)
+; czyli ((x->y)->((z -> x) -> (z -> y)))
+; na nowe typy:
+;(('_a->'_b)->(('_c -> '_a) -> ('_c -> '_b)))
+
+(define pe ( compose curry flip ))
+; compose  - (('a -> 'b) ('c -> 'a) -> ('c -> 'b))
+; f to curry
+; g to flip
+;f:
+; ('a -> 'b) = ((x y -> z) -> (x -> (y -> z)))
+; zatem:
+; a = (x y -> z)
+; b = (x ->(y->z))
+;g:
+;('c -> 'a) = ((x' y' -> z') -> (y' x' -> z'))
+; zatem:
+; c = ((x' y' -> z')
+; a = (y' x' -> z'))
+;czyli x = y' i y = x' i z = z'
+;compose zwraca ('c->'b)
+;po podstawieniu:
+;((x' y' -> z')->(x ->(y->z)))=>((y x -> z)->(x ->(y->z)))
+;na nowe typy:
+;(('_a '_b -> '_c)->('_b ->('_a->'_c)))

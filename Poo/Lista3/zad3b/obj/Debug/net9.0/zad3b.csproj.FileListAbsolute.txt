@@ -1,0 +1,14 @@
+C:\Users\User\OneDrive\Pulpit\Studia\Poo\Lista3\zad3b\bin\Debug\net9.0\zad3b.exe
+C:\Users\User\OneDrive\Pulpit\Studia\Poo\Lista3\zad3b\bin\Debug\net9.0\zad3b.deps.json
+C:\Users\User\OneDrive\Pulpit\Studia\Poo\Lista3\zad3b\bin\Debug\net9.0\zad3b.runtimeconfig.json
+C:\Users\User\OneDrive\Pulpit\Studia\Poo\Lista3\zad3b\bin\Debug\net9.0\zad3b.dll
+C:\Users\User\OneDrive\Pulpit\Studia\Poo\Lista3\zad3b\bin\Debug\net9.0\zad3b.pdb
+C:\Users\User\OneDrive\Pulpit\Studia\Poo\Lista3\zad3b\obj\Debug\net9.0\zad3b.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\Pulpit\Studia\Poo\Lista3\zad3b\obj\Debug\net9.0\zad3b.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\Pulpit\Studia\Poo\Lista3\zad3b\obj\Debug\net9.0\zad3b.AssemblyInfo.cs
+C:\Users\User\OneDrive\Pulpit\Studia\Poo\Lista3\zad3b\obj\Debug\net9.0\zad3b.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Pulpit\Studia\Poo\Lista3\zad3b\obj\Debug\net9.0\zad3b.dll
+C:\Users\User\OneDrive\Pulpit\Studia\Poo\Lista3\zad3b\obj\Debug\net9.0\refint\zad3b.dll
+C:\Users\User\OneDrive\Pulpit\Studia\Poo\Lista3\zad3b\obj\Debug\net9.0\zad3b.pdb
+C:\Users\User\OneDrive\Pulpit\Studia\Poo\Lista3\zad3b\obj\Debug\net9.0\zad3b.genruntimeconfig.cache
+C:\Users\User\OneDrive\Pulpit\Studia\Poo\Lista3\zad3b\obj\Debug\net9.0\ref\zad3b.dll

@@ -1,0 +1,14 @@
+Nazwa zwracanego zasobu?
+var contentDisposition = $"attachment; filename*=UTF-8''{Uri.EscapeDataString("opis_" + fileName)}.xml";
+
+Jak decydować o tym czy zwracany zasób ma być potraktowany jako zewnętrzny plik
+a jak zasugerować przeglądarce że jest to zasób do pokazania w oknie przeglądarki?
+
+Content-Disposition: inline; filename="plik.xml" - bezpośrednio w przeglądarce
+Content-Disposition: attachment; filename="plik.xml" - do pobrania
+
+Korzystanie z RFC5987: filename*=UTF-8''
+Kiedy przeglądarka nie obsługuje specyfikacji?
+
+Dodać jeszcze filename = "plik.xml"(bez *=UTF-8), wtedy ta co obługuje będzie
+wybierać to *=, a ta co nie będzie brała po prostu "plik.xml"

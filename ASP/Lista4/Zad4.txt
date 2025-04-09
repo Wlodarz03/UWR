@@ -1,0 +1,15 @@
+W projekcie Zad7 na liście 3
+
+Sekcja appSettings służy do przechowywania par klucz-wartość, 
+które mogą być używane do przechowywania ustawień konfiguracyjnych 
+specyficznych dla aplikacji.
+
+Sekcja connectionStrings przechowuje łańcuchy połączeń do baz danych.
+Łańcuch połączenia (connection string) to tekstowy opis parametrów, 
+które są niezbędne do nawiązania połączenia z bazą danych. 
+Typowe elementy takiego łańcucha to:
+	Data Source (lub Server) – adres serwera bazy danych.
+	Initial Catalog (lub Database) – nazwa bazy danych.
+	User ID i Password – dane logowania do bazy danych 
+		(gdy nie używa się autoryzacji zintegrowanej).
+	Integrated Security – określa, czy używać autoryzacji zintegrowanej Windows.

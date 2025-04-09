@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Projekt.Models.Product>
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Sklep</title>
+</head>
+<body>
+    <h1>Witaj @ViewData["Username"]!</h1>
+
+    <!-- Formularz wyszukiwania produktów -->
+    <form method="get" action="@Url.Action("Index", "Product")">
+        <input type="text" name="search" placeholder="Wyszukaj produkt" value="@Context.Request.Query["search"]" />
+        <button type="submit">Szukaj</button>
+    </form>
+
+    <div>
+        <h2>Produkty</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nazwa</th>
+                    <th>Cena</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in Model)
+                {
+                    <tr>
+                        <td>@product.Name</td>
+                        <td>@product.Price.ToString("C2")</td>
+                        <td><a href="@Url.Action("Details", "Product", new { id = product.Id })">Szczegóły</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Linki do innych widoków -->
+    <div>
+        <h3>Przejdź do innych sekcji:</h3>
+        <ul>
+            <li>@Html.ActionLink("Rejestracja", "Register", "Account")</li>
+            <li>@Html.ActionLink("Zaloguj się", "Login", "Account")</li>
+            <li>@Html.ActionLink("Lista użytkowników", "Users", "Account")</li>
+            <li>@Html.ActionLink("Koszyk", "Cart", "Cart")</li>
+        </ul>
+    </div>
+</body>
+</html>

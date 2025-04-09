@@ -1,0 +1,30 @@
+ if(head==nullptr){
+                    throw invalid_argument("Nie usune z pustej listy");
+                }
+                if(head==tail){
+                    if (head->el == val){
+                        head=nullptr;
+                        tail=nullptr;
+                    }
+                }
+                else{
+                    node* curr=head;
+                    if (curr->el == val){
+                        remove_front();
+                        curr=head;
+                    }
+                    for(int i=0;i<size;i++){
+                        node* x = curr->next;
+                        if (x == nullptr){
+                            if (curr->el ==val){
+                                remove_back();
+                                break;
+                            }
+                        }
+                        else if (x->el == val){
+                            curr->next = x->next;
+                            delete x;
+                        }
+                        curr=curr->next;
+                    }
+                }

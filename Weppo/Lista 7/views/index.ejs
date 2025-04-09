@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST">
+        <div>
+            Name: <input type='text' name='name' value='<%= name%>' />
+            &nbsp;
+            Surname: <input type='text' name='surname' value='<%= surname%>' />
+            &nbsp;
+            Subject: <input type='text' name='subject' value='<%= subject%>' />
+        </div>
+        <div>
+            <br>
+            zad1: <input type='text' name='z1' value='<%= z1%>' />
+            &nbsp;
+            zad2: <input type='text' name='z2' value='<%= z2%>' />
+            &nbsp;
+            zad3: <input type='text' name='z3' value='<%= z3%>' />
+            &nbsp;
+            zad4: <input type='text' name='z4' value='<%= z4%>' />
+            &nbsp;
+            zad5: <input type='text' name='z5' value='<%= z5%>' />
+            <br>
+            zad6: <input type='text' name='z6' value='<%= z6%>' />
+            &nbsp;
+            zad7: <input type='text' name='z7' value='<%= z7%>' />
+            &nbsp;
+            zad8: <input type='text' name='z8' value='<%= z8%>' />
+            &nbsp;
+            zad9: <input type='text' name='z9' value='<%= z9%>' />
+            &nbsp;
+            zad10: <input type='text' name='z10' value='<%= z10%>' />
+        </div>
+        <br>
+        <button>Zapisz</button>
+        <% if (locals.message) { %>
+            <div>
+                <%= locals.message %>
+            </div>
+        <% } %>
+    </form>
+</body>
+</html>

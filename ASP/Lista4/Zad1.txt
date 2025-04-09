@@ -1,0 +1,14 @@
+Multitenant Application - podejście multitenant to architektura aplikacji webowej,
+w której z tej samej fizycznej aplikacji korzysta wielu niezależnych "klientów"
+(rozumianych jako "właściciele witryn"). Tworząc nową witrynę na serwerze duplikuje się
+instalacje aplikacji to jest słabe.
+
+Dwie możliwości na multitenancy:
+1. Jedna witryna + wiele nagłówków hosta (nazwa instancji jako część nazwy nagłówka hosta)
+ http://www.app.com - http://klient1.app.com, http://klient2.app2.com itd;
+
+2. Jedna witryna + jeden nagłówek hosta + różne segmenty klientów w adresie
+(nazwa instancji jako segment adresu żądania)
+ http://www.app.com/klient1/strona.aspx oraz http://www.app.com/klient2/strona.aspx
+
+2 wersja lepsza - możliwe do wykonania dzięki mechanizmowi routingu

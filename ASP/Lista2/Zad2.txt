@@ -1,0 +1,20 @@
+Można ustawić filtr na localhost.
+
+W zakładce Inspectors ustawić na Raw i na górze mamy podgląd żądania
+a na dole też ustawiamy Raw i mamy podgląd odpowiedzi.
+Pułapki zostawiamy w lewym dolnym rogu - strzałka w góre do modyfikowania żądania
+a strzałka w dół do modyfikowania odpowiedzi.
+
+W zakładce Composer jest możliwość wysłania żądania.
+Wysyłamy żądanie z przeglądarki i przenosimy je do zakładki Composer
+można to jakkolwiek edytować a potem kliknąć Execute.
+
+GET przesyła parametry w adresie URL,a POST przekazuje dane w Body żądania.
+W podlgądzie żądania widać rodzaj metody - tak odróżnić najłatwiej.
+
+Aby odróżnić w C# można sprawdzić czym jest context.Request.HttpMethod
+
+Aby odczytać parametry przesłane przez GET i POST:
+Request.QueryString[] - GET
+Request.Form[] - POST
+

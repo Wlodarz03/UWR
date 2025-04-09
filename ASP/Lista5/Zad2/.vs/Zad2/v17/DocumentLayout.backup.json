@@ -1,0 +1,138 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AFED8752-A3C9-4B9D-8FA4-B147DB912B14}|Zad2\\Zad2.csproj|c:\\users\\hp\\desktop\\studia\\5 semestr\\asp\\lista5\\zad2\\zad2\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFED8752-A3C9-4B9D-8FA4-B147DB912B14}|Zad2\\Zad2.csproj|solutionrelative:zad2\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFED8752-A3C9-4B9D-8FA4-B147DB912B14}|Zad2\\Zad2.csproj|c:\\users\\hp\\desktop\\studia\\5 semestr\\asp\\lista5\\zad2\\zad2\\views\\home\\print.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AFED8752-A3C9-4B9D-8FA4-B147DB912B14}|Zad2\\Zad2.csproj|solutionrelative:zad2\\views\\home\\print.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFED8752-A3C9-4B9D-8FA4-B147DB912B14}|Zad2\\Zad2.csproj|c:\\users\\hp\\desktop\\studia\\5 semestr\\asp\\lista5\\zad2\\zad2\\views\\home\\start.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AFED8752-A3C9-4B9D-8FA4-B147DB912B14}|Zad2\\Zad2.csproj|solutionrelative:zad2\\views\\home\\start.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFED8752-A3C9-4B9D-8FA4-B147DB912B14}|Zad2\\Zad2.csproj|c:\\users\\hp\\desktop\\studia\\5 semestr\\asp\\lista5\\zad2\\zad2\\models\\homestartmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFED8752-A3C9-4B9D-8FA4-B147DB912B14}|Zad2\\Zad2.csproj|solutionrelative:zad2\\models\\homestartmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFED8752-A3C9-4B9D-8FA4-B147DB912B14}|Zad2\\Zad2.csproj|c:\\users\\hp\\desktop\\studia\\5 semestr\\asp\\lista5\\zad2\\zad2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFED8752-A3C9-4B9D-8FA4-B147DB912B14}|Zad2\\Zad2.csproj|solutionrelative:zad2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFED8752-A3C9-4B9D-8FA4-B147DB912B14}|Zad2\\Zad2.csproj|c:\\users\\hp\\desktop\\studia\\5 semestr\\asp\\lista5\\zad2\\zad2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFED8752-A3C9-4B9D-8FA4-B147DB912B14}|Zad2\\Zad2.csproj|solutionrelative:zad2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFED8752-A3C9-4B9D-8FA4-B147DB912B14}|Zad2\\Zad2.csproj|c:\\users\\hp\\desktop\\studia\\5 semestr\\asp\\lista5\\zad2\\zad2\\views\\home\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AFED8752-A3C9-4B9D-8FA4-B147DB912B14}|Zad2\\Zad2.csproj|solutionrelative:zad2\\views\\home\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad2\\Zad2\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Zad2\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad2\\Zad2\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Zad2\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T17:51:28.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad2\\Zad2\\Program.cs",
+              "RelativeDocumentMoniker": "Zad2\\Program.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad2\\Zad2\\Program.cs",
+              "RelativeToolTip": "Zad2\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T16:14:21.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Start.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad2\\Zad2\\Views\\Home\\Start.cshtml",
+              "RelativeDocumentMoniker": "Zad2\\Views\\Home\\Start.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad2\\Zad2\\Views\\Home\\Start.cshtml",
+              "RelativeToolTip": "Zad2\\Views\\Home\\Start.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T16:09:56.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Print.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad2\\Zad2\\Views\\Home\\Print.cshtml",
+              "RelativeDocumentMoniker": "Zad2\\Views\\Home\\Print.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad2\\Zad2\\Views\\Home\\Print.cshtml",
+              "RelativeToolTip": "Zad2\\Views\\Home\\Print.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T16:09:42.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad2\\Zad2\\Views\\Home\\Error.cshtml",
+              "RelativeDocumentMoniker": "Zad2\\Views\\Home\\Error.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad2\\Zad2\\Views\\Home\\Error.cshtml",
+              "RelativeToolTip": "Zad2\\Views\\Home\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T16:09:14.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeStartModel.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad2\\Zad2\\Models\\HomeStartModel.cs",
+              "RelativeDocumentMoniker": "Zad2\\Models\\HomeStartModel.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad2\\Zad2\\Models\\HomeStartModel.cs",
+              "RelativeToolTip": "Zad2\\Models\\HomeStartModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T16:07:26.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad2\\Zad2\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Zad2\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Studia\\5 semestr\\ASP\\Lista5\\Zad2\\Zad2\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Zad2\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAkwAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T16:05:58.355Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

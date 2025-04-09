@@ -1,0 +1,13 @@
+#lang racket
+
+(define/contract (suffixes xs)
+  (parametric->/c [a] (->  (listof a)(listof (listof a))))
+  (cond [(empty? xs) '()]
+        [else (cons xs (suffixes (cdr xs)))]))
+
+(define (suffixes2 xs)
+  (cond [(empty? xs) '()]
+        [else (cons xs (suffixes (cdr xs)))]))
+
+;(time (suffixes (range 300)))
+;(time (suffixes2 (range 300))) ;gorsze

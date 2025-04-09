@@ -1,0 +1,4 @@
+Definiowanie filtrów - Typy MIME  -> application/octet-stream
+
+Błąd HTTP 404.3 — Not Found
+Pokazać: http://ap1.myserver.com/cos.foo

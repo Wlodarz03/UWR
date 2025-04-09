@@ -1,0 +1,5 @@
+Działa na obu nagłówkach hostów :)
+
+Można wykorzystać różne nagłówki w różnych regionach,
+a wszystkie kierują na tę samą wytrynę.
+
