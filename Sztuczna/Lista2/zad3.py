@@ -1,0 +1,114 @@
+import heapq
+from typing import Set, Tuple, Dict, FrozenSet
+from collections import deque
+
+Position = Tuple[int, int]
+
+goals: Set[Position] = set()
+walls: Set[Position] = set()
+distance_map = {}
+
+moves: Dict[str, Position] = {
+    'U': (0, -1),
+    'D': (0, 1),
+    'L': (-1, 0),
+    'R': (1, 0)
+}
+
+def move_positions(positions: Set[Position], direction: str) -> Set[Position]:
+    dx, dy = moves[direction]
+    new_positions = set()
+    for (x, y) in positions:
+        new_pos = (x+dx, y+dy)
+        new_positions.add(new_pos if new_pos not in walls else (x, y))
+    return new_positions
+
+def reconstruct_path(came_from: Dict, current: FrozenSet) -> str:
+    path = []
+    while current in came_from:
+        prev = came_from[current]
+        for dir in list(moves.keys()):
+            if move_positions(prev, dir) == current:
+                path.append(dir)
+                break
+        current = prev
+    return ''.join(reversed(path))
+
+def a_star(starts: Set[Position], distance_map) -> str:
+    open_set = []
+    heapq.heappush(open_set, (heuristic(starts, distance_map), 0, frozenset(starts)))
+    
+    came_from: Dict[FrozenSet[Position], FrozenSet[Position]] = {}
+    g_score: Dict[FrozenSet[Position], float] = {frozenset(starts): 0}
+    
+    while open_set:
+        _, g, current = heapq.heappop(open_set)
+        
+        if all(pos in goals for pos in current):
+            return reconstruct_path(came_from, current)
+        
+        for direction in list(moves.keys()):
+            new_positions = move_positions(current, direction)
+            new_g = g + 1 
+            
+            if frozenset(new_positions) not in g_score or new_g < g_score[frozenset(new_positions)]:
+                came_from[frozenset(new_positions)] = current
+                g_score[frozenset(new_positions)] = new_g
+                f = new_g + heuristic(new_positions, distance_map)
+                heapq.heappush(open_set, (f, new_g, frozenset(new_positions)))
+    
+    return "" 
+
+
+def heuristic(positions: Set[Position], distance_map) -> int:
+    max_dist = 0
+    for (x, y) in positions:
+        #min_dist = min(abs(x - gx) + abs(y - gy) for (gx, gy) in goals)
+        min_dist = distance_map.get((x, y))
+        max_dist = max(max_dist, min_dist)
+    return max_dist
+
+def pre_bfs():
+    distance_map = {}
+    queue = deque(goals)
+    for goal in goals:
+        distance_map[goal] = 0
+    
+    while queue:
+        pos = queue.popleft()
+        for dx, dy in moves.values():
+            new_pos = (pos[0] + dx, pos[1] + dy)
+            if new_pos not in walls and new_pos not in distance_map:
+                distance_map[new_pos] = distance_map[pos] + 1
+                queue.append(new_pos)
+            elif new_pos not in walls and distance_map[new_pos] > distance_map[pos] + 1:
+                distance_map[new_pos] = distance_map[pos] + 1
+                queue.append(new_pos)
+    return distance_map
+
+
+def main():
+    with open('zad_input.txt', 'r') as input_file:
+        commandos = set()
+        y = 0
+        for line in input_file:
+            line = line.strip()
+            for x, char in enumerate(line):
+                if char == 'G':
+                    goals.add((x, y))
+                elif char == '#':
+                    walls.add((x, y))
+                elif char == 'B':
+                    commandos.add((x, y))
+                    goals.add((x, y))
+                elif char == 'S':
+                    commandos.add((x, y))
+            y += 1
+
+    distance_map = pre_bfs()
+
+    result = a_star(commandos, distance_map)
+    with open('zad_output.txt', 'w') as output_file:
+        output_file.write(result)
+
+main()
