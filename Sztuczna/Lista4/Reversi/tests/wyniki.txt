@@ -1,0 +1,15 @@
+statystycznie lepszy z progiem p=0.95
+x ≥ n * (0.5 + 1.645​ / 2*sqrt(n)) (n to liczba gier a x to min ilość punktów aby mój był lepszy)
+Dla n = 100  => x > 58
+
+Czyli wygrane pojedynki + 0.5 * remisy > 58 aby mój był lepszy
+
+
+100 pojedynków
+
+(MAIN BOSS) JA VS IAGO: won-tied-lost 96-1-3 times. 0m13.870s - wynik: 96,5 (tu miało być 80% win i jest)
+
+JA VS DESDEMONA: won-tied-lost 91-1-8 times.  4m44.341s - wynik: 91,5 > 58 => lepszy
+JA VS CASSIO: won-tied-lost 89-1-10 times.  0m42.059s - wynik: 89,5 > 58 => lepszy
+JA VS RODERIGO: won-tied-lost 71-0-29 times. 12m19.477s - wynik: 71 > 58 => lepszy
+JA VS DUKE_OF_VENICE: won-tied-lost 63-3-34 times. 20m31.635s - wynik: 64,5 > 58 => lepszy

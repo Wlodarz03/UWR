@@ -1,0 +1,59 @@
+chmod +x plik
+source venv/bin/activate
+
+evaluate dodać dodatkowo punkty za stable piony (te przy bandzie)
+
+// pair<int, optional<pair<int, int>>> minimax(Reversi game, int depth, int alpha, int beta, bool maximizing, int player) {
+//     if (depth == 0 || game.terminal())
+//         return {evaluate(game, player), nullopt};
+
+//     auto legal_moves = game.moves(player);
+    
+//     // Sprawdzanie stanu terminalnego
+//     if (legal_moves.empty()) {
+//         if (game.moves(1 - player).empty()) {
+//             return {evaluate(game, player), nullopt};
+//         }
+//         game.do_move(nullopt, player);
+//         return minimax(game, depth-1, alpha, beta, !maximizing, 1-player);
+//     }
+
+//     // Sortowanie ruchów - ważne w każdym węźle
+//     auto move_priority = [](const pair<int,int>& m) {
+//         if (find(corners.begin(), corners.end(), m) != corners.end()) return 3;
+//         if (m.first == 0 || m.first == 7 || m.second == 0 || m.second == 7) return 2;
+//         if ((m.first == 1 || m.first == 6) && (m.second == 1 || m.second == 6)) return 0;
+//         return 1;
+//     };
+    
+//     sort(legal_moves.begin(), legal_moves.end(), [&](auto a, auto b) {
+//         return move_priority(a) > move_priority(b);
+//     });
+
+//     optional<pair<int,int>> best_move;
+//     int best_eval = maximizing ? numeric_limits<int>::min() : numeric_limits<int>::max();
+
+//     for (auto move : legal_moves) {
+//         Reversi game_copy = game;
+//         game_copy.do_move(move, player);
+//         auto [eval, _] = minimax(game_copy, depth-1, alpha, beta, !maximizing, 1-player);
+        
+//         if (maximizing) {
+//             if (eval > best_eval) {
+//                 best_eval = eval;
+//                 best_move = move;
+//             }
+//             alpha = max(alpha, best_eval);
+//         } else {
+//             if (eval < best_eval) {
+//                 best_eval = eval;
+//                 best_move = move;
+//             }
+//             beta = min(beta, best_eval);
+//         }
+        
+//         if (beta <= alpha) break;
+//     }
+    
+//     return {best_eval, best_move};
+// }
