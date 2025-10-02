@@ -36,3 +36,6 @@ oprogramowania
 * Sztuczna inteligencja
 * Sieci komputerowe
 * Kurs tworzenia aplikacji frontendowych
+### Semestr 7 (current)
+* Projekt: Game Botting
+* Innovative Projects by Nokia
